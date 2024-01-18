@@ -1,4 +1,4 @@
-import { createElement as h } from "./lib/EUID.js";
+import { createElement as h, createRoot } from "./lib/EUID.js";
 
 const appElement = h(
   "div",
@@ -10,4 +10,8 @@ const appElement = h(
   h("p", { "data-id": "slogan" }, "리액트는....")
 );
 
-console.log(appElement.outerHTML);
+const root = createRoot(document.getElementById("root")); // { render, unmount }
+
+// root === undefined
+// ERROR: Cannot read properties of undefined (reading 'render')
+root.render(appElement);
