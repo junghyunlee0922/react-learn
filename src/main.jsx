@@ -17,13 +17,28 @@ const anotherData = {
 const createApp = (data) => (
   <div id="app">
     <h1>
-      {data.greetingMessage[0]}
+      {data.greetingMessage[0].toUpperCase()}
       <br />
-      {data.greetingMessage[1]}
+      {data.greetingMessage[1].toUpperCase()}
     </h1>
     <p>{data.message}</p>
   </div>
 );
+
+const createApp2 = (data) => {
+  return h(
+    "div",
+    { id: "app" },
+    h(
+      "h1",
+      {},
+      data.greetingMessage[0].toUpperCase(),
+      h("br"),
+      data.greetingMessage[1].toUpperCase()
+    ),
+    h("p", null, data.message)
+  );
+};
 
 const rootElement = document.getElementById("root");
 const reactDomRoot = createRoot(rootElement);
