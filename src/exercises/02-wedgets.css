@@ -1,0 +1,64 @@
+/* 나중에 다시하기 */
+.wedgets{
+  display: flex;
+  width: 477px;
+  height: 144px;
+  font-family: Pretendard;
+  margin: 0 auto;
+}
+
+.widgetWeather, .widgetFineDust{
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 192px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #EBEBEA;
+  background: var(--gradient-300, linear-gradient(99deg, #FFF 29.16%, #F4F4F4 93.35%));
+  box-shadow: 0px 4px 4px 0px rgba(181, 181, 181, 0.15);
+
+  p{
+    color: #6D7478;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.12px;
+    margin: 0;
+  }
+}
+
+.widgetWeather{
+  display: flex;
+  margin-right: 8px;
+
+  span{
+    color:#040404;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+  }
+
+  p{
+    align-self: flex-end;
+  }
+}
+
+.widgetFineDust{
+  display: flex;
+
+  p{
+    margin-top: 23px;
+    margin-right: 76px;
+  }
+}
+
+.weatherImg{
+  width: 118px;
+  height: 36px;
+}
