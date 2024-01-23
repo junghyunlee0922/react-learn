@@ -1,6 +1,6 @@
-import './02-wedgets.css'
+import './02-widgets.css'
 
-import React from "https://esm.sh/react";
+// import React from "https://esm.sh/react";
 import { createRoot } from "https://esm.sh/react-dom";
 
 const weatherImg = () => (
@@ -11,7 +11,7 @@ const weatherImg = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g filter="url(#filter0_f_405_28)">
+    <g filter="url(#filter0_f_479_28)">
       <rect
         x="14.4375"
         y="10.3125"
@@ -21,23 +21,23 @@ const weatherImg = () => (
         fill="#FFEF9A"
       />
     </g>
-    <g filter="url(#filter1_i_405_28)">
+    <g filter="url(#filter1_i_479_28)">
       <path
         d="M42.4375 26.6875C42.4375 33.8672 36.6172 39.6875 29.4375 39.6875C22.2578 39.6875 16.4375 33.8672 16.4375 26.6875C16.4375 19.5078 22.2578 13.6875 29.4375 13.6875C36.6172 13.6875 42.4375 19.5078 42.4375 26.6875Z"
-        fill="url(#paint0_linear_405_28)"
+        fill="url(#paint0_linear_479_28)"
       />
     </g>
-    <g filter="url(#filter2_b_405_28)">
-      <g filter="url(#filter3_i_405_28)">
+    <g filter="url(#filter2_b_479_28)">
+      <g filter="url(#filter3_i_479_28)">
         <path
           d="M36.8532 33.3911C36.9436 32.878 36.9907 32.3503 36.9907 31.8116C36.9907 26.7725 32.8676 22.6875 27.7815 22.6875C24.0004 22.6875 20.7516 24.9452 19.3333 28.1741C18.1843 27.1913 16.6933 26.5978 15.0641 26.5978C11.4311 26.5978 8.48605 29.5481 8.48605 33.1875C8.48605 33.3902 8.49519 33.5907 8.51306 33.7887C6.76569 34.6367 5.5625 36.416 5.5625 38.4737C5.5625 41.3532 7.91856 43.6875 10.8249 43.6875H35.6751C38.5814 43.6875 40.9375 41.3532 40.9375 38.4737C40.9375 35.9955 39.1924 33.9211 36.8532 33.3911Z"
-          fill="url(#paint1_linear_405_28)"
+          fill="url(#paint1_linear_479_28)"
         />
       </g>
     </g>
     <defs>
       <filter
-        id="filter0_f_405_28"
+        id="filter0_f_479_28"
         x="4.8125"
         y="0.6875"
         width="49.25"
@@ -54,11 +54,11 @@ const weatherImg = () => (
         />
         <feGaussianBlur
           stdDeviation="4.8125"
-          result="effect1_foregroundBlur_405_28"
+          result="effect1_foregroundBlur_479_28"
         />
       </filter>
       <filter
-        id="filter1_i_405_28"
+        id="filter1_i_479_28"
         x="16.4375"
         y="13.6875"
         width="26"
@@ -89,11 +89,11 @@ const weatherImg = () => (
         <feBlend
           mode="normal"
           in2="shape"
-          result="effect1_innerShadow_405_28"
+          result="effect1_innerShadow_479_28"
         />
       </filter>
       <filter
-        id="filter2_b_405_28"
+        id="filter2_b_479_28"
         x="2.1875"
         y="19.3125"
         width="42.125"
@@ -106,17 +106,17 @@ const weatherImg = () => (
         <feComposite
           in2="SourceAlpha"
           operator="in"
-          result="effect1_backgroundBlur_405_28"
+          result="effect1_backgroundBlur_479_28"
         />
         <feBlend
           mode="normal"
           in="SourceGraphic"
-          in2="effect1_backgroundBlur_405_28"
+          in2="effect1_backgroundBlur_479_28"
           result="shape"
         />
       </filter>
       <filter
-        id="filter3_i_405_28"
+        id="filter3_i_479_28"
         x="5.5625"
         y="22.6875"
         width="35.375"
@@ -147,11 +147,11 @@ const weatherImg = () => (
         <feBlend
           mode="normal"
           in2="shape"
-          result="effect1_innerShadow_405_28"
+          result="effect1_innerShadow_479_28"
         />
       </filter>
       <linearGradient
-        id="paint0_linear_405_28"
+        id="paint0_linear_479_28"
         x1="27.4628"
         y1="33.7634"
         x2="38.159"
@@ -162,7 +162,7 @@ const weatherImg = () => (
         <stop offset="1" stop-color="#FFEE94" />
       </linearGradient>
       <linearGradient
-        id="paint1_linear_405_28"
+        id="paint1_linear_479_28"
         x1="7.8125"
         y1="41.8125"
         x2="43.5"
@@ -220,8 +220,8 @@ const fineDust = () => (
 );
 
 
-const renderWedgets = () => (
-  <div className="wedgets">
+const renderWidgets = () => (
+  <div className="widgets">
     <div className="widgetWeather">
       <div className='weatherImg'>
       <span>-0.9°</span>
@@ -236,4 +236,4 @@ const renderWedgets = () => (
   </div>
 );
 
-createRoot(document.getElementById("root")).render(renderWedgets());
+createRoot(document.getElementById("root")).render(renderWidgets());
