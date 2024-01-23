@@ -1,5 +1,5 @@
-import { createRoot } from "react-dom/client";
-import FormControl from "../components/FormControl";
+import { createRoot } from 'react-dom/client';
+import FormControl from '../components/FormControl';
 
 function App() {
   return (
@@ -10,4 +10,4 @@ function App() {
   );
 }
 
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById('root')).render(<App />);
