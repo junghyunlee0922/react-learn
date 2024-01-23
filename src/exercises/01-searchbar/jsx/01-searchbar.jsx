@@ -1,9 +1,9 @@
 // no module (without from)
-import "./01-searchbar.css";
+import './01-searchbar.css';
 
 // module (with from)
-import React from "react";
-import { createRoot } from "react-dom/client";
+// import React from 'react';
+import { createRoot } from 'react-dom/client';
 
 // DOM Script === Vanilla Script
 function bodyStyling() {
@@ -96,4 +96,4 @@ const renderSearchBar = () => (
   </form>
 );
 
-createRoot(document.getElementById("root")).render(renderSearchBar());
+createRoot(document.getElementById('root')).render(renderSearchBar());
