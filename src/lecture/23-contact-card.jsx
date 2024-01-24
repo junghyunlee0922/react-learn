@@ -42,7 +42,7 @@ function Exercise() {
       <ContactCard
         gender="woman"
         face={2}
-        name="박연주"
+        name="하연주"
         job="웹 디자이너"
         email="ayounju@dev.io"
       />
