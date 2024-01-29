@@ -1,21 +1,36 @@
-import CatCardItem from './CatCardItem';
-import classes from './CatCardList.module.css';
+import classes from './CatCardItem.module.css';
+import { getStaticImage } from '../../utils/getStaticAsset';
+import convertDayFormat from '../../utils/convertDayFormat';
 
-// 데이터 가져오기
-import catsData from '../../data/cats.json';
+function CatCardItem({ cat: { imageAlt, imageSrc, name, badges, birthday } }) {
+  let renderBadges = null;
 
-function CatCardList() {
-  // 데이터 순환하여 리스트 렌더링
-  const renderCatsList = catsData.map((cat) => {
-    // console.log(cat);
-    return <CatCardItem key={cat.id} cat={cat} />;
-  });
+  // if 문
+  if (badges.length > 0) {
+    // for 문
+    const renderBadgeList = badges.map((badge) => (
+      <li key={badge.slug}>{badge.label}</li>
+    ));
+
+    renderBadges = (
+      <ul className={`${classes.badgeList} ${classes.golden}`}>
+        {renderBadgeList}
+      </ul>
+    );
+  }
 
   return (
-    <section className={classes.component} aria-label="사랑스런 고양이 가족">
-      {renderCatsList}
-    </section>
+    <article className={classes.CatCard}>
+      <header>
+        <img src={getStaticImage(imageSrc)} alt={imageAlt} />
+        <h2>{name}</h2>
+        <p className={classes.birthday}>
+          태어난 날: {convertDayFormat(birthday)}
+        </p>
+      </header>
+      {renderBadges}
+    </article>
   );
 }
 
-export default CatCardList;
+export default CatCardItem;
